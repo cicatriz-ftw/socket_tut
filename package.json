@@ -1,0 +1,24 @@
+{
+  "name": "socketut",
+  "description": "Socket Tutorial for Mike",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "MakeShift Studios",
+    "url": "http://makeshiftstudios.com/"
+  },
+  "dependencies": {
+    "request": "2.27.x",
+    "ejs": "0.8.2",
+    "express": "3.x",
+    "ejs-locals": "~1.0.2",
+    "socket.io": "latest"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
