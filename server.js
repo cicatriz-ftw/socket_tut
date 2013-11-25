@@ -3,6 +3,11 @@ var express = require('express'),
 	app   	= express(), 
 	io 		= require('socket.io').listen(app.listen(port));
 
+io.configure(function(){
+  io.set('transports',['xhr-polling']);
+	io.set("polling duration", 10); 
+  //io.set("polling duration", 10);
+});
 //CONFIGURE EXPRESS	
 app.configure(function() {
   app.set('views', __dirname + '/views');

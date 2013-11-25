@@ -19,7 +19,7 @@ var script = function (win, doc) {
   function publicInit(){
       _grid =doc.getElementById('grid');
       _connectionState = doc.getElementById('connection-state');
-      _socket = io.connect('http://localhost');
+      _socket = io.connect();
       _socket.addListener(socketEvents.CONNECT,     socketConnectedEvent);
       _socket.addListener(socketEvents.DISCONNECT,  socketDisconnectedEvent);
       _socket.addListener(socketEvents.ERROR,       socketErrorEvent);
